@@ -1,3 +1,10 @@
+"""
+Recipe for Hacking Statistics: Direct Simulation
+
+That works well when you have some a-priori model of the world.
+For example, you know that tossing a fair coin will land heads 50% of the time
+and you and you can simulate that.
+"""
 import numpy as np
 
 from s_2_jake_vanderplas.f_1_is_coin_fair import setup_coin_toss_problem
@@ -15,6 +22,4 @@ if __name__ == '__main__':
     n_flips, n_heads = setup_coin_toss_problem()
 
     p = p_value_via_simulation(n_flips, n_heads)
-    print('Assuming the null hypothesis is true (i.e. assuming there is no'
-          ' effect that we are interested in), the probability of getting the'
-          f' observed data just by chance has been deteremined to be {p}')
+    print(f'P(the observed data | H_0) has been estimated to be {p}')

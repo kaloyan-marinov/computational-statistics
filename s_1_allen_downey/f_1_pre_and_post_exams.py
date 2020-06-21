@@ -116,4 +116,4 @@ if __name__ == '__main__':
     delta = np.mean(np.array(post_exam_scores) - np.array(pre_exam_scores))
     pcs = np.array(pre_exam_scores) / 50
     p = p_value(delta, pcs, num_questions)
-    print(f'The p-value has been determined to be: {p}')
+    print(f'The p-value, P(observed effect|H_0), has been estimated to be: {p}')
