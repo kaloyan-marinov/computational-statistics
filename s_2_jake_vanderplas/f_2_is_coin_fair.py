@@ -21,5 +21,6 @@ if __name__ == '__main__':
     # Set up the problem.
     n_flips, n_heads = setup_coin_toss_problem()
 
+    # Solve.
     p = p_value_via_simulation(n_flips, n_heads)
     print(f'P(the observed data | H_0) has been estimated to be {p}')

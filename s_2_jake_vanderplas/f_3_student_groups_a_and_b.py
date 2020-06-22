@@ -84,6 +84,7 @@ def p_value_via_simulation(delta, group_a_scores, group_b_scores,
     return count / iterations
 
 if __name__ == '__main__':
+    # Set up the problem.
     group_a_scores, group_b_scores = setup_problem()
 
     mean_a = np.mean(group_a_scores)
@@ -93,6 +94,7 @@ if __name__ == '__main__':
     print(round(mean_b, 1))
     print(round(delta, 1))
 
+    # Solve.
     p = p_value_analytically(group_a_scores, group_b_scores)
     print(f'P(the observed effect | H_0) is {p}')
 
