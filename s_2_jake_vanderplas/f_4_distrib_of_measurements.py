@@ -1,5 +1,13 @@
 """
-Recipe for Hacking Statistics: Bootstrap Resampling
+Recipe for Hacking Statistics: Bootstrap Resampling (Bootstrapping)
+
+Bootstrapping is well-studied in the statistics community and rests on solid
+theoretical grounds.
+
+Some caveats about bootstrapping are as follows:
+- It doesn't work well for rank-based statistics (e.g. maximum value).
+- It works poorly with very few samples (N > 20 is a good rule of thumb).
+- As always, be careful about selection biases & non-independent data!
 
 You have multiple measurements of the some unknown quantity.
 
