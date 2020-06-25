@@ -55,6 +55,15 @@ if __name__ == '__main__':
     results_df = linear_fit_via_simulation(x, y)
 
     # Visualize (the distribution of) the computed results.
+    # (
+    #   For future reference, the following are handy resources that I utilized
+    #   in order to implement the code-block below:
+    #       https://seaborn.pydata.org/generated/seaborn.jointplot.html#seaborn.jointplot
+    #       https://kite.com/python/docs/seaborn.JointGrid
+    #       https://www.kaggle.com/keshavbansal001/complete-seaborn-tutorial
+    #       https://github.com/mwaskom/seaborn/issues/1873
+    #       https://matplotlib.org/tutorials/introductory/customizing.html
+    # )
     plt.style.use('seaborn')
 
     fig, ax = plt.subplots()

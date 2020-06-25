@@ -23,3 +23,6 @@ Notes:
 
 - Again: caveats about selection bias and independence in data.
 """
+
+if __name__ == '__main__':
+    pass
