@@ -1,0 +1,15 @@
+#,technique,example,idea,relevant tool(s),,
+1,direct simulation,is a coin fair?,use an available (theoretical) generative model to simulate repetitions of the whole experiment,"np.random.randint(2, size=n_flips)",,
+2,shuffling,is group A better than group B?,"lack a generative model so can’t simulate a group member; need a way for the scores to be the simulation themselves
+
+simulate the (sampling) distribution (of possible test scores) by shuffling the labels repeatedly and computing the desired statistic","# in place
+random.shuffle(x)
+
+# immutable seq
+random.sample(population, k)",,
+3,bootstrap resampling (bootstrapping),how can you characterize the distribution of a set of measurements?,"lack a generative model, have a single group
+
+treat the measurements as (a proxy to) its own (sampling) distribution
+
+simulate the (sampling) distribution (of possible measurements) by drawing samples with replacement repeatedly and computing the desired statistic","np.random.randint(n, size=n)",,
+,,can be applied to even more complicated statistics,,,,

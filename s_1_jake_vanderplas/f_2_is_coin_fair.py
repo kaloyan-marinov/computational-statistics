@@ -3,7 +3,7 @@ Recipe for Hacking Statistics: Direct Simulation
 
 That works well when you have some a-priori model of the world.
 For example, you know that tossing a fair coin will land heads 50% of the time
-and you and you can simulate that.
+and you can simulate that.
 
 Please, run this script by following these steps:
 - open a terminal
